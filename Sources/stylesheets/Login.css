@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: 100%;
+  background: #4367b1;
+}
+
+.container {
+  width: 80%;
+  max-width: 360px;
+  height: auto;
+  background: rgba(83, 82, 82, 0.5);
+  color: #fff;
+  margin: 50px auto 0;
+  border-radius: 14px;
+  padding: 40px 10px;
+  text-align: center;
+  backdrop-filter: blur(13px);
+}
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+input {
+  padding: 0 40px;
+}
+
+.Login-input {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #424242;
+  border-radius: 1px;
+  padding: 0.5rem 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+::placeholder {
+  color: #fff;
+  align-self: start;
+}
+
+.saveInfo {
+  color: #fff;
+  display: flex;
+}
+
+.saveInfoAndForgetPassword {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  font-size: 0.95rem;
+  justify-content: space-between;
+}
+
+.SubmitAndCreateAcc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  width: 70%;
+  padding: 10px 80px;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
