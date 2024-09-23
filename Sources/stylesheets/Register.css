@@ -1,0 +1,194 @@
+:root {
+  /**
+     * colors
+     */
+
+  --main--color: #2c73eb; /* Corrected to --main--color */
+  --sc--color: #ffffff; /* Corrected to --sc--color */
+
+  /* Text Colors */
+  --pri--txt--color: #494949; /* Corrected to --pri--txt--color */
+  --sec--txt--color: #696f79; /* Corrected to --sec--txt--color */
+  --tri--txt--color: #8692a6; /* Corrected to --tri--txt--color */
+  --heading--txt--color: #000000;
+
+  /* Button Colors */
+  --btn--color: #1565d8; /* Corrected to --btn--color */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Reusable Styles */
+
+.hidden {
+  opacity: 0;
+  content: none;
+}
+
+/***************************Login Page ***********************/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  gap: 20px;
+}
+
+/* Banner styling */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main--color); /* Use your main color */
+  color: var(--sc--color);
+}
+
+.logo {
+  position: absolute;
+  padding: 20px;
+}
+/* Form styling */
+
+.content {
+  display: flexbox;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  width: 70%;
+  height: 500px;
+  background-color: #fff; /* Form background */
+}
+/* Form title and inputs */
+.form_title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: var(--heading--txt--color);
+}
+
+.form_title_subinfo {
+  margin-bottom: 20px;
+  color: var(--sec--txt--color);
+  line-height: 1.5;
+}
+
+.input_block {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1.5fr 2.2fr;
+  gap: 2rem;
+}
+
+.input_block.three_col {
+  grid-template-columns: 1.5fr 0.8fr 0.8fr;
+  gap: 1rem;
+}
+
+.input_label,
+p {
+  color: var(--sec--txt--color);
+}
+
+.input_field {
+  width: 100%;
+  padding: 1.2rem;
+  border: 0.2rem solid var(--main--color);
+  border-radius: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+/* Checkbox section */
+.tick {
+  margin-right: 10px;
+}
+
+.checkbox_text {
+  color: var(--pri--txt--color);
+}
+
+/* Button styling */
+button {
+  background-color: var(--btn--color);
+  color: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  background-color: #0046a6;
+}
+
+a {
+  text-decoration: none;
+  color: #1565d8;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Stack on top of each other on small screens */
+    height: auto; /* Allow height to adjust */
+  }
+
+  .banner {
+    height: auto; /* Allow banner height to adjust */
+  }
+
+  form {
+    height: auto; /* Allow form height to adjust */
+  }
+}
+
+/********************************************************************/
+
+/* Styling for the circular component -OR */
+.circular-component {
+  width: 40px; /* Set the width of the circle */
+  height: 40px; /* Set the height of the circle */
+  background-color: var(--tri--txt--color); /* Dark gray background */
+  border-radius: 50%; /* Make the background circular */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  box-shadow: 0 4px 10px rgba(107, 107, 107, 0.5); /* Optional shadow effect */
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.text {
+  color: var(--pri--txt--color); /* Text color */
+  font-size: 15px; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-align: center; /* Center text */
+}
+
+/* Styling for thee Google,twitter,Linked Logo's */
+.Other_signup_way ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 1rem auto 0 auto;
+  gap: 40px;
+}
+
+.singup_option_logos {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* Sty */
