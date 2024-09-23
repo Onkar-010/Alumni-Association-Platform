@@ -3,12 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
-    <link href="Sources/stylesheets/Login.css" type="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+
+    <link href="Sources/stylesheets/Login.css" rel="stylesheet" />
     <title>Alumni Association Login Platform</title>
   </head>
   <body>
-    <div class="Banner">
-      <svg path="Sources/images/UML Diagram/iit-logowhite.svg"></svg>
+    <div class="logo">
+      <img
+        src="Sources/images/UML Diagram/iit-logowhite.svg"
+        alt="IIT Alumni Logo"
+      />
+    </div>
+    <!---------------------------Login - Page ----------------------->
+    <div class="container">
+      <div class="banner">
+        <!-- Container for the animation -->
+        <div
+          id="lottie-animation"
+          style="width: 550px; height: 560px; background: #2c73eb"
+        ></div>
+        <script>
+          // Load and play the animation from the local JSON file
+          var animation = lottie.loadAnimation({
+            container: document.getElementById("lottie-animation"), // Element to render animation in
+            renderer: "svg", // Renderer: svg for vector-based animations
+            loop: true, // Looping the animation
+            autoplay: true, // Automatically play the animation
+            path: "Sources/images/Animation - 1727087877186 (1).json", // Local path to the JSON file
+          });
+        </script>
+      </div>
+      <div class="content">
+        <form style="margin: 0 auto">
+          <h1 class="form_title">Account Login</h1>
+          <p class="form_title_subinfo">
+            If you are already a member you can login with your email address
+            and password.
+          </p>
+
+          <div class="input_block">
+            <label class="input_label">Email address</label>
+            <input type="text" class="input_field" />
+          </div>
+          <div class="input_block">
+            <label class="input_label">Phone No</label>
+            <input type="text" class="input_field" />
+          </div>
+
+          <div class="input_block">
+            <input type="checkbox" class="tick" />
+            <lable class="checkbok_text">Remember me</lable>
+          </div>
+
+          <button type="submit">Login into account</button>
+
+          <p>
+            Dont have an account ?
+            <a href="Register.html" class="link">Sign up here </a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!---------------------------Verification Page ----------------------->
+    <div class="verifiedPage">
+      <div
+        id="lottie-animation2"
+        style="
+          width: 40rem;
+          height: 40rem;
+          align-items: center;
+          background: #2c73eb;
+        "
+      ></div>
+      <script>
+        // Load and play the animation from the local JSON file
+        var animation = lottie.loadAnimation({
+          container: document.getElementById("lottie-animation2"), // Element to render animation in
+          renderer: "svg", // Renderer: svg for vector-based animations
+          loop: true, // Looping the animation
+          autoplay: true, // Automatically play the animation
+          path: "Sources/images/Animation - 1727103464218.json", // Local path to the JSON file
+        });
+      </script>
     </div>
   </body>
 </html>
