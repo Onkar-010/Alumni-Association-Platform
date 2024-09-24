@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
-
     <link href="Sources/stylesheets/Register.css" rel="stylesheet" />
     <title>Alumni Association Login Platform</title>
   </head>
@@ -15,28 +14,29 @@
         alt="IIT Alumni Logo"
       />
     </div>
-    <!---------------------------Register - Page ----------------------->
+
+    <!-- Container for the registration page -->
     <div class="container">
       <div class="banner">
-        <!-- Container for the animation -->
+        <!-- Animation section -->
         <div
           id="lottie-animation"
           style="width: 550px; height: 560px; background: #2c73eb"
         ></div>
         <script>
-          // Load and play the animation from the local JSON file
           var animation = lottie.loadAnimation({
-            container: document.getElementById("lottie-animation"), // Element to render animation in
-            renderer: "svg", // Renderer: svg for vector-based animations
-            loop: true, // Looping the animation
-            autoplay: true, // Automatically play the animation
-            path: "Sources/images/Animation - 1727109026649.json", // Local path to the JSON file
+            container: document.getElementById("lottie-animation"),
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "Sources/images/Animation - 1727109026649.json",
           });
         </script>
       </div>
-      <!--Enter Email id and Phone No-->
-      <div class="content hidden">
-        <form style="margin: 0 auto">
+
+      <!-- Content: Registration form -->
+      <div class="content">
+        <form id="registerForm" style="margin: 0 auto">
           <h1 class="form_title">Create Account</h1>
           <p class="form_title_subinfo">
             Become a member and enjoy exclusive promotions.
@@ -44,23 +44,23 @@
 
           <div class="input_block">
             <label class="input_label">Email address</label>
-            <input type="text" class="input_field" />
+            <input type="text" class="input_field email" required />
           </div>
           <div class="input_block">
             <label class="input_label">Phone No</label>
-            <input type="text" class="input_field" />
+            <input type="text" class="input_field Phone" />
           </div>
 
           <div class="input_block">
             <input type="checkbox" class="tick" />
-            <lable class="checkbok_text">Remember me</lable>
+            <label class="checkbox_text">Remember me</label>
           </div>
 
-          <button type="submit">Register account</button>
+          <button type="submit" id="registerBtn">Register account</button>
 
           <p>
-            Already an account ?
-            <a href="Login.html" class="link">Login here </a>
+            Already an account?
+            <a href="Login.html" class="link">Login here</a>
           </p>
 
           <div class="circular-component">
@@ -70,192 +70,222 @@
           <div class="Other_signup_way">
             <ul>
               <li>
-                <a href="#"
-                  ><img
+                <div class="logo_wrapper">
+                  <img
                     class="singup_option_logos"
                     src="Sources/images/google.png"
-                    alt="Gmail"
-                /></a>
+                    alt="Google logo"
+                  />
+                </div>
               </li>
               <li>
-                <a href="#">
+                <div class="logo_wrapper">
                   <img
                     class="singup_option_logos"
                     src="Sources/images/twitter.png"
-                    alt="Twitter"
+                    alt="Twitter logo"
                   />
-                </a>
+                </div>
               </li>
               <li>
-                <a href="#">
+                <div class="logo_wrapper">
                   <img
                     class="singup_option_logos"
                     src="Sources/images/linkedin.png"
-                    alt="LinkedIn"
+                    alt="LinkedIn logo"
                   />
-                </a>
+                </div>
               </li>
             </ul>
           </div>
         </form>
       </div>
-      <!--Selecting The Role Alumni ,Student , Staff-->
-      <div class="content hidden">
-        <form style="margin: 0 auto">
-          <h1 class="form_title">Enter Verification Code</h1>
-          <p class="form_title_subinfo">
-            If you are already a member you can login with your email address
-            and password.
-          </p>
-
-          <div class="input_block">
-            <label class="input_label">Verification Code</label>
-            <input type="text" class="input_field" />
-          </div>
-
-          <button type="submit">Verify Code</button>
-
-          <p>
-            Didn't Recived the Code Yet ?
-            <a href="Login.html" class="link">Resend OTP </a>
-          </p>
-        </form>
-      </div>
-      <!-- Selecting the Role of the User (Alumni,Student , Staff) -->
-      <section class="content hidden">
-        <form style="margin: 0 auto">
-          <h1 class="form_title">Select Your Role</h1>
-          <p class="form_title_subinfo">Please Select Your Role</p>
-
-          <div class="input_block">
-            <label class="input_label">Role</label>
-            <select name="Select the Role" class="input_field">
-              <option>Alumni</option>
-              <option>Student</option>
-              <option>Staff / Faculty</option>
-            </select>
-          </div>
-
-          <button type="submit">Select Role</button>
-
-          <p>
-            If you are already a member you can login with your email address
-            and password. ?
-            <a href="Login.html" class="link">Back</a>
-          </p>
-        </form>
-      </section>
-
-      <!--/*************************** Enter the Detail's********************/-->
-
-      <div class="content">
-        <form style="margin: 0 auto">
-          <h1 class="form_title">Enter Details</h1>
-          <p class="form_title_subinfo">
-            Become a member and enjoy exclusive promotions
-          </p>
-
-          <div class="input_block">
-            <div class="label1">
-              <label class="input_label">Role</label>
-              <select name="Select the Role" class="input_field">
-                <option>Alumni</option>
-                <option>Student</option>
-                <option>Staff / Faculty</option>
-              </select>
-            </div>
-
-            <div class="label2">
-              <lable class="input_label">College</lable>
-              <select name="" class="input_field">
-                <option>Alumni</option>
-                <option>Student</option>
-                <option>Staff / Faculty</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="input_block">
-            <div class="label1">
-              <label class="input_label">Course</label>
-              <select name="Select the Role" class="input_field">
-                <option>Alumni</option>
-                <option>Student</option>
-                <option>Staff / Faculty</option>
-              </select>
-            </div>
-
-            <div class="label2">
-              <lable class="input_label">Department</lable>
-              <select name="" class="input_field">
-                <option>Alumni</option>
-                <option>Student</option>
-                <option>Staff / Faculty</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="input_block three_col">
-            <div class="label1">
-              <label class="input_label">Full Name</label>
-              <input type="text" class="input_field" />
-            </div>
-
-            <div class="label2">
-              <label class="input_label">Joining Year</label>
-              <input type="text" class="input_field" />
-            </div>
-
-            <div class="label3">
-              <label class="input_label">Graduation Year</label>
-              <input type="text" class="input_field" />
-            </div>
-          </div>
-          <div class="input_block">
-            <div class="label1">
-              <label class="input_label">Enrollment No/ABC ID</label>
-              <input type="text" class="input_field" />
-            </div>
-
-            <div class="label2">
-              <lable class="input_label">Create Password</lable>
-              <input type="text" class="input_field" />
-            </div>
-          </div>
-
-          <button type="submit">Register account</button>
-
-          <p>
-            Already an account ?
-            <a href="Login.html" class="link">Login here </a>
-          </p>
-        </form>
-      </div>
     </div>
 
-    <!---------------------------Verification Page ----------------------->
-    <section class="Verification Page hidden">
-      <div class="verifiedPage">
-        <div
-          id="lottie-animation2"
-          style="
-            width: 40rem;
-            height: 40rem;
-            align-items: center;
-            background: #2c73eb;
-          "
-        ></div>
-        <script>
-          // Load and play the animation from the local JSON file
-          var animation = lottie.loadAnimation({
-            container: document.getElementById("lottie-animation2"), // Element to render animation in
-            renderer: "svg", // Renderer: svg for vector-based animations
-            loop: true, // Looping the animation
-            autoplay: true, // Automatically play the animation
-            path: "Sources/images/Animation - 1727103464218.json", // Local path to the JSON file
-          });
-        </script>
-      </div>
-    </section>
+    <!-- JavaScript code to replace content -->
+    <script>
+      const content = document.querySelector(".content");
+      const registerForm = document.getElementById("registerForm");
+
+      // First form submission (registration form)
+      registerForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent form submission
+
+        // Replace content with verification code form
+        content.innerHTML = `
+                <form id="verificationForm" style="margin: 0 auto">
+                  <h1 class="form_title">Enter Verification Code</h1>
+                  <p class="form_title_subinfo">
+                    Please enter the code sent to your email.
+                  </p>
+
+                  <div class="input_block">
+                    <label class="input_label">Verification Code</label>
+                    <input type="text" class="input_field" id="code" required />
+                  </div>
+
+                  <button type="submit" id="VerificationBtn">Verify Code</button>
+
+                  <p>
+                    Didn't receive the code yet?
+                    <a href="Login.html" class="link">Resend OTP</a>
+                  </p>
+                </form>`;
+
+        // Add event listener to the verification form
+        const verificationForm = document.getElementById("verificationForm");
+
+        verificationForm.addEventListener("submit", function (e) {
+          e.preventDefault(); // Prevent verification form submission
+
+          const code = document.getElementById("code").value;
+
+          if (code) {
+            showVerificationPage(); // Call function to replace page with the verification page
+          } else {
+            alert("Please enter the verification code.");
+          }
+        });
+      });
+
+      // Function to replace the entire HTML content with the verification page
+      function showVerificationPage() {
+        // Replace the body content with the verification page's HTML
+        document.body.innerHTML = `
+              <div class="verifiedPage">
+                <div
+                  id="lottie-animation2"
+                  style="
+                    width: 40rem;
+                    height: 40rem;
+                    align-items: center;
+                    background: #2c73eb;
+                  "
+                ></div>
+              </div>
+            `;
+
+        // Reinitialize the Lottie animation after the HTML content is replaced
+        var animation2 = lottie.loadAnimation({
+          container: document.getElementById("lottie-animation2"),
+          renderer: "svg",
+          loop: true,
+          autoplay: true,
+          path: "Sources/images/Animation - 1727103464218.json",
+        });
+
+        // After 1.5 seconds, replace the page content with the new form
+        setTimeout(function () {
+          restoreContainerWithForm();
+        }, 1500);
+      }
+
+      function restoreContainerWithForm() {
+        document.body.innerHTML = `
+        <div class="logo">
+            <img
+                src="Sources/images/UML Diagram/iit-logowhite.svg"
+                alt="IIT Alumni Logo"
+            />
+        </div>
+        <div class="container">
+            <div class="banner">
+                <div
+                    id="lottie-animation"
+                    style="width: 550px; height: 560px; background: #2c73eb"
+                ></div>
+            </div>
+            
+            <div class="content">
+                <form style="margin: 0 auto">
+                    <h1 class="form_title">Enter Details</h1>
+                    <p class="form_title_subinfo">
+                        Become a member and enjoy exclusive promotions
+                    </p>
+                    <div class="input_block">
+                        <div class="label1">
+                            <label class="input_label">Role</label>
+                            <select name="Select the Role" class="input_field">
+                                <option>Alumni</option>
+                                <option>Student</option>
+                                <option>Staff / Faculty</option>
+                            </select>
+                        </div>
+                        <div class="label2">
+                            <label class="input_label">College</label>
+                            <select name="" class="input_field">
+                                <option>IIT</option>
+                                <option>MIT</option>
+                                <option>Stanford</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input_block">
+                        <div class="label1">
+                            <label class="input_label">Course</label>
+                            <select name="Select the Role" class="input_field">
+                                <option>Computer Science</option>
+                                <option>Electrical</option>
+                                <option>Civil</option>
+                            </select>
+                        </div>
+                        <div class="label2">
+                            <label class="input_label">Department</label>
+                            <select name="" class="input_field">
+                                <option>Engineering</option>
+                                <option>Science</option>
+                                <option>Arts</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input_block three_col">
+                        <div class="label1">
+                            <label class="input_label">Full Name</label>
+                            <input type="text" class="input_field" />
+                        </div>
+                        <div class="label2">
+                            <label class="input_label">Joining Year</label>
+                            <input type="text" class="input_field" />
+                        </div>
+                        <div class="label3">
+                            <label class="input_label">Graduation Year</label>
+                            <input type="text" class="input_field" />
+                        </div>
+                    </div>
+                    <div class="input_block">
+                        <div class="label1">
+                            <label class="input_label">Enrollment No/ABC ID</label>
+                            <input type="text" class="input_field" />
+                        </div>
+                        <div class="label2">
+                            <label class="input_label">Create Password</label>
+                            <input type="password" class="input_field" />
+                        </div>
+                    </div>
+                    <button type="submit">Register account</button>
+                    <p>
+                        Already an account ?
+                        <a href="Login.html" class="link">Login here </a>
+                    </p>
+                </form>`;
+
+        var animation = lottie.loadAnimation({
+          container: document.getElementById("lottie-animation"),
+          renderer: "svg",
+          loop: true,
+          autoplay: true,
+          path: "Sources/images/Animation - 1727109026649.json",
+        });
+
+        // Apply styles to all input blocks
+        document.querySelectorAll(".input_block").forEach((inputBlock) => {
+          inputBlock.style.cssText = `
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        `;
+        });
+      }
+    </script>
   </body>
 </html>

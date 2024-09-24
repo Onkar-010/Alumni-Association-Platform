@@ -23,6 +23,8 @@
   box-sizing: border-box;
 }
 
+/* Reusable Styles */
+
 /***************************Login Page ***********************/
 
 .container {
@@ -139,13 +141,16 @@ a {
 /********************************************************/
 
 /************************Verification Page *************************/
+/************************Verification Page *************************/
 
 .verifiedPage {
-  margin-top: 10rem;
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: center; /* Center items vertically */
+  height: 100vh; /* Full height of the viewport */
   background: var(--main--color);
+  margin: 0; /* Remove any margin */
+  z-index: 1;
 }
 
 /*******************************************************************/
