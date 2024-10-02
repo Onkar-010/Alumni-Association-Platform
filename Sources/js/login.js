@@ -7,7 +7,7 @@ const registerForm = document.getElementById("registerForm");
 // Function to replace the entire HTML content with the verification page
 function showVerificationPage() {
   // Replace the body content with the verification page's HTML
-  document.content.innerHTML = `
+  document.body.innerHTML = `
   <div class="verifiedPage">
     <div
       id="lottie-animation2"
