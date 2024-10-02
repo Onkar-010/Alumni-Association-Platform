@@ -104,6 +104,65 @@ body {
 .main {
   background: #f5f4ff;
 }
+/* Style for the search container */
+.search-container {
+  position: relative; /* To position the icon relative to the input */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.4rem;
+  gap: 2rem;
+}
+
+/* Style for the search input field */
+.search-input {
+  width: 70%;
+  padding: 10px;
+  padding-left: 40px; /* Space for the icon */
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(175, 173, 173, 0.3);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Focus effect for the input */
+.search-input:focus {
+  border-color: #007bff; /* Change the border color on focus */
+}
+
+/* Style for the search icon */
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px; /* Position it inside the input */
+  transform: translateY(-50%); /* Center the icon vertically */
+  width: 20px;
+  height: 20px;
+  color: #999;
+  pointer-events: none; /* Icon shouldn't block interaction with the input */
+  display: block;
+}
+
+/* Style for the search button */
+.search-button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the search button */
+.search-button:hover {
+  background-color: #0056b3; /* Darken the button on hover */
+}
 
 /*************************************right SideBar */
 .rightSidebar {
@@ -111,8 +170,108 @@ body {
   flex-direction: column;
   background: #ffffff;
   align-items: center;
+  vertical-align: middle;
   margin: 0.5rem;
-  padding: 1.2rem;
+  padding: 0.6rem;
   border-radius: 5%;
   box-shadow: 0 4px 8px rgba(90, 89, 89, 0.3);
+  min-height: 100%; /* Ensure the right sidebar takes full height */
+}
+.container > .rightSidebar {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Sidebar styling */
+
+/* Logout button */
+.logout-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Profile section */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.profile-role {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Stats section */
+.stats-section {
+  display: flex;
+  gap: 0.2rem;
+  justify-content: space-around;
+
+  margin-bottom: 10px;
+}
+
+.stat-item {
+  text-align: center;
+  font-size: 12px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f5f5ff;
+}
+
+.stat-icon {
+  margin-bottom: 5px;
+}
+
+.stat-number {
+  font-weight: bold;
+  font-size: 13px;
+  color: #007bff;
+}
+
+/* Show more alerts button */
+.more-alerts-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.more-alerts-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.more-alerts-btn:hover {
+  background-color: #0056b3;
 }
