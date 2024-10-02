@@ -1,0 +1,118 @@
+:root {
+  /**
+     * colors
+     */
+
+  --main--color: #2c73eb; /* Corrected to --main--color */
+  --sc--color: #ffffff; /* Corrected to --sc--color */
+
+  /* Text Colors */
+  --pri--txt--color: #494949; /* Corrected to --pri--txt--color */
+  --sec--txt--color: #696f79; /* Corrected to --sec--txt--color */
+  --tri--txt--color: #8692a6; /* Corrected to --tri--txt--color */
+  --heading--txt--color: #000000;
+
+  /* Button Colors */
+  --btn--color: #1565d8; /* Corrected to --btn--color */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: #f5f4ff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 0.3fr;
+  border: #000000;
+  height: 100vh;
+}
+
+/*******************************Left SideBar */
+
+.leftSidebar {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 1.2rem;
+  border-radius: 3%;
+  box-shadow: 0 4px 8px rgba(90, 89, 89, 0.3);
+}
+
+/* Header Brand */
+
+.header-brand {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 1rem;
+}
+
+.header-brand-logo {
+  width: 4rem;
+  background-color: #2c73eb;
+  border-radius: 8%;
+}
+
+/* Dashboard Navigation*/
+
+.sidebarNavigation {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.navigationList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigationList > li:not(:last-child) {
+  margin-bottom: 20px; /* Applies a gap to all list items except the last one */
+}
+
+.navBtn {
+  margin-left: 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  color: #8692a6;
+}
+
+.navBtn button {
+  border: none;
+  font-weight: 500;
+  background: #ffffff;
+}
+
+/**************************************** main */
+
+.main {
+  background: #f5f4ff;
+}
+
+/*************************************right SideBar */
+.rightSidebar {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 1.2rem;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px rgba(90, 89, 89, 0.3);
+}

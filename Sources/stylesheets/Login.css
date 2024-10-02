@@ -143,14 +143,4 @@ a {
 /************************Verification Page *************************/
 /************************Verification Page *************************/
 
-.verifiedPage {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Center items vertically */
-  height: 100vh; /* Full height of the viewport */
-  background: var(--main--color);
-  margin: 0; /* Remove any margin */
-  z-index: 1;
-}
-
 /*******************************************************************/
